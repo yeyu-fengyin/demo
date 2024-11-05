@@ -1,3 +1,12 @@
 spring:
   main:
     allow-circular-references: true
+
+  data:
+    mongodb:
+      host: 192.168.0.45
+      username: root
+      password: ZK.2024~08.05jg
+      database: lattice
+      port: 27017
+      authentication-database: admin
