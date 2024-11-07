@@ -2,6 +2,7 @@ package com.example.graphql.controller
 
 import com.example.graphql.bean.User
 import org.springframework.graphql.data.method.annotation.Argument
+import org.springframework.graphql.data.method.annotation.MutationMapping
 import org.springframework.graphql.data.method.annotation.QueryMapping
 import org.springframework.web.bind.annotation.RestController
 
@@ -26,5 +27,15 @@ class UserController {
     @QueryMapping
     fun allUsers(): List<User> {
         return users
+    }
+
+    @MutationMapping
+    fun addUser(@Argument name:String,@Argument age:Int) :Boolean{
+        return true
+    }
+
+    @MutationMapping
+    fun updateUser(user: User) :Boolean{
+        return true
     }
 }

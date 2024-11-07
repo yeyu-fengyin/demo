@@ -19,7 +19,7 @@ class WebSocketService {
 
 fun main(args: Array<String>) {
     val service = WebSocketService()
-    val connect = service.connect("ws://192.168.1.96:26710")
+    val connect = service.connect("ws://192.168.2.7:51300")
     connect.send("{\n" +
             "    \"jsonrpc\": \"2.0\",\n" +
             "    \"method\": \"latc_subscribe\",\n" +

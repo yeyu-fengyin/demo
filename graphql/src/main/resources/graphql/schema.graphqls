@@ -3,6 +3,11 @@ type Query {
     allUsers: [User]
 }
 
+type Mutation {
+    addUser(name:String,age:Int):Boolean
+    updateUser(id:ID!,name:String,age:Int):Boolean
+}
+
 type User {
     id: ID!
     name: String
