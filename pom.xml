@@ -37,6 +37,9 @@
         <module>webSocket</module>
         <module>webSocketServer</module>
         <module>graphql</module>
+        <module>grpc-protocol</module>
+        <module>grpc-server</module>
+        <module>grpc-client</module>
     </modules>
     <dependencyManagement>
 
