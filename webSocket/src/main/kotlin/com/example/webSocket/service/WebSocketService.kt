@@ -18,16 +18,16 @@ class WebSocketService {
 }
 
 fun main(args: Array<String>) {
-    val service = WebSocketService()
-    val connect = service.connect("ws://192.168.2.7:51300")
-    connect.send("{\n" +
-            "    \"jsonrpc\": \"2.0\",\n" +
-            "    \"method\": \"latc_subscribe\",\n" +
-            "    \"params\": [\n" +
-            "        \"monitorData\"\n" +
-            "    ],\n" +
-            "    \"id\": 1\n" +
-            "}")
+//    val service = WebSocketService()
+//    val connect = service.connect("ws://192.168.2.7:51300")
+//    connect.send("{\n" +
+//            "    \"jsonrpc\": \"2.0\",\n" +
+//            "    \"method\": \"latc_subscribe\",\n" +
+//            "    \"params\": [\n" +
+//            "        \"monitorData\"\n" +
+//            "    ],\n" +
+//            "    \"id\": 1\n" +
+//            "}")
 
 //    connect.send("{\n" +
 //            "    \"jsonrpc\": \"2.0\",\n" +

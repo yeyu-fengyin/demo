@@ -1,0 +1,15 @@
+spring:
+  kafka:
+    # 软件老王，kafka集群服务器地址
+    bootstrap-servers: 172.22.3.108:31091,172.22.3.108:31092,172.22.3.108:31093
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      group-id: test
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    properties:
+      reconnect.backoff.ms: 2000     # 初始重连间隔时间
+      reconnect.backoff.max.ms: 60000 # 最大重连间隔时间
+      retry.backoff.ms: 2000         # 请求失败后的重试间隔

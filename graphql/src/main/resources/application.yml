@@ -1,0 +1,10 @@
+test:
+  out-time: 8000
+
+server:
+  undertow:
+#    no-request-timeout: 8000
+    options:
+      server:
+        no-request-timeout: 8000
+        idle-timeout: 8000

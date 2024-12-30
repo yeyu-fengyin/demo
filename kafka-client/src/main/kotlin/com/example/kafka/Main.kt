@@ -1,12 +1,13 @@
-package com.example.graphql
+package com.example.kafka
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.runApplication
 
 /**
- *@auth yeyu
- *@date 2024/11/5
+ *
+ *@Auth yeyu
+ *@Date 2024/11/8
+ *
  */
 @SpringBootApplication
 class Main
